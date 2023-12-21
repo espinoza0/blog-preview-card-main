@@ -37,7 +37,7 @@ main{
     border-radius: 1rem;
     border: 1px solid var(--black);
     background-color: var(--white);
-    box-shadow: var(--black) 5px 5px;
+    box-shadow: var(--black) 8px 8px;
     gap: 1rem;
     font-weight: 600;
 }
