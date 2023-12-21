@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+}
+html{
+    font-size: 16px;
+    font-family: 'Figtree', sans-serif;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 1.65rem;
+}
+img[alt = "illustration"]{
+    border-radius: .65rem;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--yellow);
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    max-width: 25rem;
+    width: 85vw;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    box-shadow: var(--black) 5px 5px;
+    gap: 1rem;
+    font-weight: 600;
+}
+.card_text{
+    gap: .9rem;
+}
+p:first-of-type{
+    font-weight: bold;
+}
+.card_text p:first-child{
+    width: fit-content;
+    padding: .5rem .65rem;
+    border-radius: .4rem;
+    font-weight: bold;
+    background-color: var(--yellow);
+}
+.card_text p:nth-of-type(3){
+    opacity: .4;
+    line-height: 1.5rem;
+    margin: .25rem 0;
+}
+.card_author{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.card_author img{
+    height: 2.5rem;
+}
+h1:hover{
+    color: var(--yellow);
+    transition: color .2s;
+}
